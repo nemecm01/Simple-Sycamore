@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="font-awesome.min.css" !important/>
+		<!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
@@ -19,27 +21,17 @@
 			<section id="header">
 				<header>
 					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-					<h1 id="logo"><a href="#">Willis Corto</a></h1>
-					<p>I got reprogrammed by a rogue AI<br />
-					and now I'm totally cray</p>
+					<h1 id="logo"><a href="#">Jery the Pimp</a></h1>
+					<p>the School of Pimpin<br>
+					Grade 8</p>
 				</header>
 				<nav id="nav">
 					<ul>
-						<li><a href="#one" class="active">About</a></li>
-						<li><a href="#two">Things I Can Do</a></li>
-						<li><a href="#three">A Few Accomplishments</a></li>
-						<li><a href="#four">Contact</a></li>
+						<li><a href="#one" class="active">My Grades</a></li>
+						<li><a href="#two">News</a></li>
+						<li><a href="#three">Events</a></li>
 					</ul>
 				</nav>
-				<footer>
-					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-					</ul>
-				</footer>
 			</section>
 
 		<!-- Wrapper -->
@@ -52,27 +44,154 @@
 							<section id="one">
 								<div class="container">
 									<header class="major">
-										<h2>Read Only</h2>
-										<p>Just an incredibly simple responsive site<br />
-										template freebie by <a href="http://html5up.net">HTML5 UP</a>.</p>
+										<h2>My Grades</h2>
 									</header>
-									<p>Faucibus sed lobortis aliquam lorem blandit. Lorem eu nunc metus col. Commodo id in arcu ante lorem ipsum sed accumsan erat praesent faucibus commodo ac mi lacus. Adipiscing mi ac commodo. Vis aliquet tortor ultricies non ante erat nunc integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum.</p>
+									<div class=col-lg-10>
+						<table class="table table-bordered" id="grade-table">
+                        <thead>
+                            <tr>
+                                <th class=thead>Class</th>
+                                <th class=thead>Teacher Name</th>
+                                <th class=thead>Subject</th>
+                                <th class=thead>Date Posted</th>
+                                <th class=thead>Grade %</th>
+                                <th class=thead>Letter Grade</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <div class=col-lg-2>
+                                    <td>Juke Class</td>
+                                </div>
+                                <div class=col-lg-2>
+                                    <td>Siv HD</td>
+                                </div>
+                                <td></td>
+                                <div class=col-lg-2>
+                                    <td>06/4/15</td>
+                                </div>
+                                <div class=col-lg-2>
+                                    <td>88.56</td>
+                                </div>
+                                <div class=col-lg-2>
+                                    <td>
+                                        <button class="btn btn-info" id="gradebtn" data-toggle="modal" data-target="#myModal1">B
+                                        </button>
+                                    </td>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>Jungle Tips</td>
+                                <td>FoxDrop</td>
+                                <td></td>
+                                <td>05/22/15</td>
+                                <td>80.9</td>
+                                <td>
+                                    <button class="btn btn-info" id="gradebtn" data-toggle="modal" data-target="#myModal1">C
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>Jim Raynor</td>
+                                <td></td>
+                                <td>04/20/15</td>
+                                <td>93.4</td>
+                                <td>
+                                    <button class="btn btn-info" id="gradebtn" data-toggle="modal" data-target="#myModal1">A
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+									</div>
 								</div>
 							</section>
 
 						<!-- Two -->
 							<section id="two">
-								<div class="container">
-									<h3>Things I Can Do</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer lorem ipsum dolor sit amet.</p>
-									<ul class="feature-icons">
-										<li class="fa-code">Write all the code</li>
-										<li class="fa-cubes">Stack small boxes</li>
-										<li class="fa-book">Read books and stuff</li>
-										<li class="fa-coffee">Drink much coffee</li>
-										<li class="fa-bolt">Lightning bolt</li>
-										<li class="fa-users">Shadow clone technique</li>
-									</ul>
+								<div class="container" style="height:650px; overflow:auto; !important">
+									<header class="major">
+									<h3>News</h3>
+									</header>
+	<div class=row id=article1 class=articleBB>
+    <div class=col-lg-2>
+        <image src="../imgs/Jimmy.jpg" class="teacherPic"></image>
+        <h3 id=teacherInfo>Jim Raynor</h3>
+    </div>
+    <div class=col-lg-1>
+        <h3 id=teacherGrade>8th Grade <br>
+    English</h3>
+    </div>
+    <div class=col-lg-9>
+        <p id=articleText>
+            Pool Party Draven is now available to play on PBE! As always, we find bug reports and feedback super helpful, so please feel free to 
+            comment in the thread below! Likewise, if you’ve got questions regarding the skin, post ‘em here, and we’ll do our best to answer them! 
+            *Prices on PBE are subject to change.
+        </p>
+
+    </div>
+</div>
+
+<div class=row id=article2 class=articleBB>
+    <div class=col-lg-2>
+        <image src="../imgs/siv.jpg" class="teacherPic"></image>
+        <h3 id=teacherInfo>Siv HD</h3>
+    </div>
+    <div class=col-lg-1>
+        <h3 id=teacherGrade>8th Grade <br>
+    Jukes</h3>
+    </div>
+    <div class=col-lg-9>
+        <p id=articleText>
+            Ryze [Note: These are RELATIVE TO THE PREVIOUS PBE CHANGES. If you'd like to see a list of all the Ryze changes currently on the PBE, please 
+            click here.] Overload (Q) cooldown reducing effect for Arcane Mastery reduced to 60/70/80/90/100% of Q's cooldown from 105/110/115/120/125% O
+            verload (Q)'s new passive now also reads "and spells that would reduce Overload's cooldown instead fully reset it."
+        </p>
+
+    </div>
+</div>
+
+<div class=row id=article3 class=articleBB>
+    <div class=col-lg-2>
+        <image src="../imgs/foxdrop.jpg" class="teacherPic"></image>
+        <h3 id=teacherInfo>FoxDrop</h3>
+    </div>
+    <div class=col-lg-1>
+        <h3 id=teacherGrade>8th Grade<br>
+    Jungle Tips</h3>
+    </div>
+    <div class=col-lg-9>
+        <p id=articleText>
+            A new champion and skin sale starts tomorrow! Between June 12th and Jun
+            e 15th, you'll be able to pick up Night Hunter Rengar for 487 RP, Cowgirl Miss Fortune for 375 RP, Battlecast X
+            erath for 260 RP, Vel'Koz for 487 RP, Graves for 440 RP and Jax for 292 RP.
+        </p>
+
+    </div>
+</div>
+
+<div class=row id=article3 class=articleBB>
+    <div class=col-lg-2>
+        <image src="../imgs/foxdrop.png" class="teacherPic"></image>
+        <h3 id=teacherInfo>FoxDrop</h3>
+    </div>
+    <div class=col-lg-1>
+        <h3 id=teacherGrade>8th Grade<br>
+    Jungle Tips</h3>
+    </div>
+    <div class=col-lg-9>
+        <p id=articleText>
+            A new champion and skin sale starts tomorrow! Between June 12th and Jun
+            e 15th, you'll be able to pick up Night Hunter Rengar for 487 RP, Cowgirl Miss Fortune for 375 RP, Battlecast X
+            erath for 260 RP, Vel'Koz for 487 RP, Graves for 440 RP and Jax for 292 RP.
+        </p>
+
+    </div>
+</div>
+
 								</div>
 							</section>
 
@@ -104,34 +223,6 @@
 											</div>
 										</article>
 									</div>
-								</div>
-							</section>
-
-						<!-- Four -->
-							<section id="four">
-								<div class="container">
-									<h3>Contact Me</h3>
-									<p>Integer eu ante ornare amet commetus vestibulum blandit integer in curae ac faucibus integer non. Adipiscing cubilia elementum integer. Integer eu ante ornare amet commetus.</p>
-									<form method="post" action="#">
-										<div class="row uniform">
-											<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-											<div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										</div>
-										<div class="row uniform">
-											<div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
-										</div>
-										<div class="row uniform">
-											<div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
-										</div>
-										<div class="row uniform">
-											<div class="12u">
-												<ul class="actions">
-													<li><input type="submit" class="special" value="Send Message" /></li>
-													<li><input type="reset" value="Reset Form" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
 								</div>
 							</section>
 
@@ -494,7 +585,6 @@
 					</section>
 
 			</div>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollzer.min.js"></script>

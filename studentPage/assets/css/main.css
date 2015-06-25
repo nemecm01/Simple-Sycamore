@@ -1,5 +1,5 @@
-@import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400");
+@import url("font-awesome.min.css") !important;
+@import url("http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic|Source+Code+Pro:400")!important; 
 
 /*
 	Read Only by HTML5 UP
@@ -8,7 +8,21 @@
 */
 
 /* Reset */
+#teacherInfo{
+    margin-right: 70px;
+}
+#teacherGrade{
+    margin-left:-90px;
+    margin-top: 50px;
+}
+.teacherPic{
+    height: 100px;
+}
 
+#teacherGrade{
+    margin-left:-90px;
+    margin-top: 50px;
+}
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -153,7 +167,7 @@
 			width: 42.5%;
 		}
 
-		.container.\32 5\25 {
+		.container.\32 5\25 {font
 			width: 21.25%;
 		}
 
