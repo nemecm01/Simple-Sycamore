@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE PHP>
 <!--
 	Eventually by HTML5 UP
 	html5up.net | @n33co
@@ -9,7 +9,6 @@
     if(!empty($_GET['username']){
             
         }
-
 ?>
 <html>
 	<head>
