@@ -1,0 +1,26 @@
+
+.teacherGrade{
+    margin-top: 50px;
+    color:black;
+}
+.teacherPic{
+    height: 100px;
+}
+.teacherPic{  
+    margin-top:3%;
+    height: 100px;
+    border: 3px solid #4acaa8;
+    border-radius: 50%;
+    width: 100px;
+ 
+}
+.teacherInfo{
+    color:black;
+}
+.articleText{
+    margin-bottom:15px;
+    margin-right:15px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
