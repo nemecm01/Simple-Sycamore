@@ -18,16 +18,18 @@
     <!-- Header -->
     <section id="header">
         <header>
-            <span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
-            <h1 id="logo"><a href="#">Jery the Pimp</a></h1>
-            <p>the School of Pimpin
-                <br> Grade 8</p>
+            <span class="image avatar"><img id="studentPhoto" src="" alt="" /></span>
+            <h1 id="logo"></h1>
+            <p id="schoolName"></p>
+            <p id="studentGrade"></p>
         </header>
         <nav id="nav">
             <ul>
                 <li><a href="#one" class="active">My Grades</a></li>
                 <li><a href="#two">News</a></li>
-                <li><a href="#three">Lunch</a></li>
+                <li><a href="#three">Lunch</a></li> 
+                <!-- <li><a href="options.html">Options</a></li> -->
+                <li><a href="logout.html">Logout</a></li>
             </ul>
         </nav>
     </section>
@@ -46,11 +48,10 @@
                 <div style="padding:2%;">
                    
                     <div class=col-lg-10 style="padding:2%;">
-                        <table class="table table-bordered" id="grade-table">
+                        <table class="table table-bordered" >
                             <thead>
                                 <tr>
                                     <th class=thead>Class</th>
-                                    <th class=thead>Teacher Name</th>
                                     <th class=thead>Subject</th>
                                     <th class=thead>Date Posted</th>
                                     <th class=thead>Grade %</th>
@@ -59,127 +60,25 @@
                                 </tr>
                             </thead>
 
-                            <tbody>
-                                <tr>
-                                    <div class=col-lg-2>
-                                        <td>Juke Class</td>
-                                    </div>
-                                    <div class=col-lg-2>
-                                        <td>Siv HD</td>
-                                    </div>
-                                    <td></td>
-                                    <div class=col-lg-2>
-                                        <td>06/4/15</td>
-                                    </div>
-                                    <div class=col-lg-2>
-                                        <td>88.56</td>
-                                    </div>
-                                    <div class=col-lg-2>
-                                        <td>
-                                            <button class="btn btn-info" id="gradebtn" data-toggle="modal" data-target="#myModal1">B
-                                            </button>
-                                        </td>
-                                    </div>
-                                </tr>
-                                <tr>
-                                    <td>Jungle Tips</td>
-                                    <td>FoxDrop</td>
-                                    <td></td>
-                                    <td>05/22/15</td>
-                                    <td>80.9</td>
-                                    <td>
-                                        <button class="btn btn-info" id="gradebtn" data-toggle="modal" data-target="#myModal1">C
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>English</td>
-                                    <td>Jim Raynor</td>
-                                    <td></td>
-                                    <td>04/20/15</td>
-                                    <td>93.4</td>
-                                    <td>
-                                        <button class="btn btn-info" id="gradebtn" data-toggle="modal" data-target="#myModal1">A
-                                        </button>
-                                    </td>
-                                </tr>
+                            <tbody id="grade-table">
+                               
                             </tbody>
                         </table>
                     </div>
                 </div>
             </section>
 
-            <!-- Two -->
+            <!-- Two -->                       
             <section id="two">
-                <div style="height:650px; overflow:auto; padding:5%;">
-                    <header class="major">
-                        <h2>News</h2>
+        <header class="major" style="padding:2%">
+            <h2 style="margin-bottom:0px;">News</h2>
+            </header>
+                <div style="height:650px; overflow:auto; padding:5%; padding-top:0%;">
+                    <header>
+
                     </header>
-                    <div class=row id=article1>
-                        <div class=col-lg-2>
-                            <image src="../imgs/Jimmy.jpg" class="teacherPic"></image>
-                            <h3 class=teacherInfo>Jim Raynor</h3>
-                        </div>
-                        <div class=col-lg-1>
-                            <h3 class=teacherGrade>8th Grade <br>
-                        English</h3>
-                        </div>
-                        <div class=col-lg-9>
-                            <p class=articleText>
-                                Pool Party Draven is now available to play on PBE! As always, we find bug reports and feedback super helpful, so please feel free to comment in the thread below! Likewise, if you’ve got questions regarding the skin, post ‘em here, and we’ll do our best to answer them! *Prices on PBE are subject to change.
-                            </p>
-
-                        </div>
-                    </div>
-                    <hr style="color:#7F7F7F;">
-                    <div class=row class="article">
-                        <div class=col-lg-6>
-                            <image src="../imgs/siv.jpg" class="teacherPic"></image>
-                            <h3 class=teacherInfo>Tim Magraw</h3>
-                        </div>
-                        <h3 class=teacherGrade>8th Grade<br>
-                        Jukes</h3>
-                        <div class=col-lg-9>
-                            <p class=articleText>
-                                Ryze [Note: These are RELATIVE TO THE PREVIOUS PBE CHANGES. If you'd like to see a list of all the Ryze changes currently on the PBE, please click here.] Overload (Q) cooldown reducing effect for Arcane Mastery reduced to 60/70/80/90/100% of Q's cooldown from 105/110/115/120/125% O verload (Q)'s new passive now also reads "and spells that would reduce Overload's cooldown instead fully reset it."
-                            </p>
-
-                        </div>
-                    </div>
-                            <hr>
-                    <div class=row class="article">
-                        <div class=col-lg-2>
-                            <image src="../imgs/foxdrop.jpg" class="teacherPic"></image>
-                            <h3 class=teacherInfo>Alec Baldwin</h3>
-                        </div>
-                        <div class=col-lg-1>
-                            <h3 class=teacherGrade>8th Grade<br>
-                        Jungle Tips</h3>
-                        </div>
-                        <div class=col-lg-9>
-                            <p class=articleText>
-                                A new champion and skin sale starts tomorrow! Between June 12th and Jun e 15th, you'll be able to pick up Night Hunter Rengar for 487 RP, Cowgirl Miss Fortune for 375 RP, Battlecast X erath for 260 RP, Vel'Koz for 487 RP, Graves for 440 RP and Jax for 292 RP.
-                            </p>
-
-                        </div>
-                    </div>
-                    <hr>
-                    <div class=row class=article>
-                        <div class=col-lg-2>
-                            <image src="../imgs/foxdrop.jpg" class="teacherPic"></image>
-                            <h3 class=teacherInfo>Tom Clancy</h3>
-                        </div>
-                        <div class=col-lg-1>
-                            <h3 class=teacherGrade>8th Grade<br>
-                        Jungle Tips</h3>
-                        </div>
-                        <div class=col-lg-9>
-                            <p class=articleText>
-                                A new champion and skin sale starts tomorrow! Between June 12th and Jun e 15th, you'll be able to pick up Night Hunter Rengar for 487 RP, Cowgirl Miss Fortune for 375 RP, Battlecast X erath for 260 RP, Vel'Koz for 487 RP, Graves for 440 RP and Jax for 292 RP.
-                            </p>
-
-                        </div>
-                    </div>
+                    <div class=row id=articleText>
+                    
                 </div>
             </section>
 
@@ -220,8 +119,8 @@
                             </div>
                             <div class="inner">
                                 <h3>Lunch for Today:</h3><br>
-                                <header class="major">
-                                <h2>Mystery Meat</h2>
+                                <header id="lunch" class="major">
+                                
                                 </header>
                             </div>
                         </article>
@@ -234,14 +133,43 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button class="btn btn-close" data-dismiss="modal">x</button>
-                        <h3 class="modal-title">Assignments in (insert class)</h3>
-
+                        <h3 class="modal-title" id="modal-title"></h3>
                     </div>
                     <div class="modal-body">
-                        <h1>instert Grade Table Here</h1>
+                        <table>
+                            <thead>
+                             <tr>
+                                    <th class=thead>Assignment</th>
+                                    <th class=thead></th>
+                                    <th class=thead>Due Date</th>
+                                    <th class=thead>Poss</th>
+                                    <th class=thead>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody id="assignments">
+                            
+                            </tbody>
+                        </table>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-default" data-dismiss="modal">close</button>
+                        <button class="btn btn-default close" data-dismiss="modal">close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="modal" id=optionModal>
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="btn btn-close close" data-dismiss="modal">x</button>
+                        <h3 class="modal-title" id="modal-title">Options</h3>
+                    </div>
+                    <div class="modal-body">
+                       
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default close" data-dismiss="modal">close</button>
                     </div>
                 </div>
             </div>
@@ -250,6 +178,7 @@
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/students.js"></script>
     <script src="assets/js/jquery.scrollzer.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
     <script src="assets/js/skel.min.js"></script>

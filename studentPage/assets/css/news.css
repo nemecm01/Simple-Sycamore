@@ -1,6 +1,11 @@
-
-.teacherGrade{
-    margin-top: 50px;
+h2{
+    color: #09A479;
+}
+p{
+    margin:0px;
+}
+#datePosted{
+    margin-top: 25px;
     color:black;
 }
 .teacherPic{
@@ -14,10 +19,11 @@
     width: 100px;
  
 }
-.teacherInfo{
-    color:black;
+#articleTitle{
+    margin-top:25px;
+    padding:0%;
 }
-.articleText{
+#articleText{
     margin-bottom:15px;
     margin-right:15px;
     margin-left: 15px;
