@@ -28,10 +28,13 @@ $(document).ready(function(){
         "url": url,
         "data": data
     })
-    .done(function(data){
+    .success(function(data){
         localStorage.setItem("token", data.access_token);
         location.href="../studentPage/index.html";
-        });
+        })
+    .error(function(){
+        $("#errMsg").html("Login Failed. Please Try Again!");
+        })
     });
 
 });

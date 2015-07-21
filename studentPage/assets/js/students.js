@@ -139,7 +139,7 @@ $(document).ready(function() {
         ///////////////////////////////////////////////
         //NEWS
         ///////////////////////////////////////////////
-        var url = start + "/School/" + me.SchoolID + "/News" + end + "&preview=1";
+        var url = start + "/School/" + me.SchoolID + "/News" + end + "&preview=1&nohtml=1";
 
         $.get(url, function(data) {
             console.log(data);
